@@ -14,11 +14,11 @@ Prompt Studio aims to become the go-to tool for engineering prompts for language
 
 Think of it like **Postman but for LLMs**.
 
-:::info
+![overview.png](./overview.png)
 
+:::info
 You are currently using a preview version of Prompt Studio. If you find the idea useful but you lack a specific feature,
 please [let us know](https://github.com/pufflyai/prompt-studio-docs/discussions/categories/ideas).
-
 :::
 
 > **[Checkout what we are working on right now](https://github.com/orgs/pufflyai/projects/6/views/2)**
@@ -29,13 +29,19 @@ please [let us know](https://github.com/pufflyai/prompt-studio-docs/discussions/
 
 ## Getting Started
 
-Before you can start using Prompt Studio you will need to Sign up using github.
+Before you can start using Prompt Studio you will need to Sign up using your github or google account.
 
-### Setting up you first Provider
+### Setting up a Provider
 
-Currently it integrates with the OpenAI APIs, but our goal is to allow you to connect to any ML model / API.
+Currently Prompt Studio integrates with OpenAI APIs. Our goal is to allow you to connect to any ML model / API. Click on the OpenAI button to open the Providers menu and enter your API key in
+the input field
+
+![setup_api_key.png](./setup_api_key.png)
+
+Once the Provider is setup you will be able to make requests towards it.
 
 ## What's next?
 
-- Learn more about [Prompt Engineering](https://docusaurus.io/docs/search)
+- [Learn how to write templates in Prompt Studio](/concepts/templates)
+- Learn more about [Prompt Engineering](https://www.promptingguide.ai/)
 - Get involved in the [Prompt Studio Community](https://discord.gg/3RxwUEk8fW)

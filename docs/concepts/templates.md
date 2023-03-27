@@ -9,15 +9,11 @@ numbers of prompts from a [set](./sets).
 
 PromptStudio uses [Mustache](https://mustache.github.io/) as a template language. Below are a few examples of its usage:
 
-Given the template:
-
-```
+```md title="template"
 Hello {{my_var}}!
 ```
 
-And the variable Object:
-
-```json
+```json title="variable.json"
 {
   "my_var": "world"
 }
@@ -29,9 +25,55 @@ The following prompt will be generated:
 Hello world!
 ```
 
+### Assigning sets to a variable
+
+You can also assign a set to a variable:
+
+```json
+{
+  "my_var": ["world", "mars"]
+}
+```
+
+The following prompt will be generated:
+
+```
+Hello world, mars!
+```
+
+### Generating a prompt per item in a set
+
+Sometimes you want to compare completions over large numbers of prompts. With Prompt Studio you can do that by assigning a set to a variable and selecting "Create completion for each item".
+
+This will create a separate prompt for each item in the set:
+
+Given the template:
+
+```md title="template"
+Hello {{my_var}}!
+```
+
+And the variable
+
+```json title="variable.json"
+{
+  "my_var": ["world", "mars"]
+}
+```
+
+The following prompts will be generated:
+
+```md title="prompt1"
+Hello world, world!
+```
+
+```md title="prompt2"
+Hello world, mars!
+```
+
 ### Loops
 
-You can also loop over your data, given the template below:
+You can also loop over your data within a single prompt, given the template below:
 
 ```
 Hello
@@ -51,12 +93,26 @@ And the variables:
 
 The following prompt will be generated:
 
-```
+```md title="prompt"
 Hello
 
 - Moomin
 - Snufkin
 - Groke
+```
+
+:::info
+You can assign a set to a variable in the prompt editor
+:::
+
+### Comments
+
+You can also write comments in your prompt templates.
+
+```
+{{! this is a multiline comment and will not
+be part of any prompt created from this template
+}}
 ```
 
 ## Usecases
