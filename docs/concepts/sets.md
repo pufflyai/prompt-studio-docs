@@ -3,11 +3,13 @@
 A **set** is a collection of data that you can reuse across your prompts. This could be test queries, keywords
 for a specific narration style or examples for few shot prompting.
 
-:::info
-The current preview version of PromptStudio only allows sets to be arrays of strings.
-:::
+# Types of sets
 
-A set of story types
+The current preview version of PromptStudio allows a set to be an **array of strings** or a **file**.
+
+# Set as an array of strings
+
+Let's say you want to create a set of story types
 
 ```text title="story_types.json"
 [

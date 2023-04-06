@@ -40,6 +40,10 @@ the input field
 
 Once the Provider is setup you will be able to make requests towards it.
 
+:::info
+You will get an error on Prompt Studio when setting up your openAI key If you have not set up billing in your OpenAI account. To do this, click on your profile picture at the top right -> _Manage account_, then select _Billing_ on the left side. There you can set a billing plan. Your key should work on Prompt Studio after that.
+:::
+
 ## What's next?
 
 - [Learn how to write templates in Prompt Studio](/concepts/templates)
