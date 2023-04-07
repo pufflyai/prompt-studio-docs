@@ -2,74 +2,80 @@
 
 A template allows you to create variations of prompts from data.
 
-When creating a prompt you can make use of templates to quickly insert data at specific locations, or create large
-numbers of prompts from a [set](./sets).
+When creating a prompt you can make use of templates to quickly insert data in your prompt, or create large numbers of prompts from a [set](./sets).
 
 ## Syntax
 
 PromptStudio uses [Mustache](https://mustache.github.io/) as a template language. Below are a few examples of its usage:
 
+### Template with Free-text variable
+
+If you write the following in your template draft:
+
 ```md title="template"
 Hello {{my_var}}!
 ```
 
-```json title="variable.json"
-{
-  "my_var": "world"
-}
+Then on the left side, as shown with the arrow below, a variable dropdown will be created where you can set your value. In this example, we will set the variable type of be 'Free text'
+
+![my_var](../images/my_var.png)
+
+When you fill in your value and click on **_Enter_**, a prompt will be generated here:
+
+![prompt_generated](../images/prompt_generated.png)
+
+You can then click on the generated prompt on the right tab, to see the full prompt preview in the center tab as shown here:
+
+![prompt_preview](../images/prompt_preview.png)
+
+### Template with set as variable
+
+Let's say that you create a set like this one:
+
+![create_set](../images/create_set.png)
+
+You can write a template like this for example
+
 ```
+Write a story with the following characteristics:
+
+{{story_characteristics}}
+```
+
+After setting the `story_characteristics` to the set that we created above, a prompt will be generated looking as follows:
 
 The following prompt will be generated:
 
-```
-Hello world!
-```
+![prompt_set_preview](../images/story_prompt_preview.png)
 
-### Assigning sets to a variable
+After clicking on **_Run Prompt_**, the result is this:
 
-You can also assign a set to a variable:
+![set_result](../images/set_result.png)
 
-```json
-{
-  "my_var": ["world", "mars"]
-}
-```
-
-The following prompt will be generated:
-
-```
-Hello world, mars!
-```
-
-### Generating a prompt per item in a set
+### Generating several prompts from a set
 
 Sometimes you want to compare completions over large numbers of prompts. With Prompt Studio you can do that by assigning a set to a variable and selecting "Create completion for each item".
 
-This will create a separate prompt for each item in the set:
-
 Given the template:
 
-```md title="template"
-Hello {{my_var}}!
+```
+A cat named Mumin goes out for a walk. He suddenly stops when he sees a tiny puffy creature. Generate a {{mood}} continuation to the story.
 ```
 
-And the variable
+Let's say that you have the following set of story moods that you are passing as the `mood` variable:
 
-```json title="variable.json"
-{
-  "my_var": ["world", "mars"]
-}
-```
+![story_moods](../images/moods.png)
 
-The following prompts will be generated:
+You can generate several prompts and compare their results by selecting this checkbox:
 
-```md title="prompt1"
-Hello world, world!
-```
+![several_prompts](../images/select_several_prompts.png)
 
-```md title="prompt2"
-Hello world, mars!
-```
+If you click on **_Run Prompt_**, you will get the following two prompts with their respective completion:
+
+![sad_result](../images/sad_mood_story.png) ![happy_result](../images/happy_mood_story.png)
+
+<img src="../images/sad_mood_story.png" alt="sad_result" />
+<img src="../images/happy_mood_story.png" alt="happy_result" />
 
 ### Loops
 
