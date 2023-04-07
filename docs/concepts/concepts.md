@@ -7,9 +7,9 @@ sidebar_position: 2
 We currently support **four** types of assets:
 
 - [Collection](#collection)
-- [Prompt](/concepts/Assets/Prompts)
-- [Set](/concepts/Assets/sets)
-- [File](/concepts/Assets/Files)
+- [Prompt](/concepts/Prompts)
+- [Set](/concepts/sets)
+- [File](/concepts/Files)
 
 To create an asset, click on the **+** button, you will see the assets, as seen below.
 
