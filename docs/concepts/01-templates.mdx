@@ -1,3 +1,10 @@
+import sad_image from "../images/sad_mood_story.png";
+import happy_image from "../images/happy_mood_story.png";
+import story_characteristics from "../images/create_story_characteristics_set.png";
+import story_moods from "../images/moods.png";
+import several_prompts from "../images/select_several_prompts.png";
+import loops_var from "../images/loops_var.png";
+
 # Templates
 
 A template allows you to create variations of prompts from data.
@@ -28,11 +35,11 @@ You can then click on the generated prompt on the right tab, to see the full pro
 
 ![prompt_preview](../images/prompt_preview.png)
 
-### Template with set as variable
+### Template with a Set as variable
 
 Let's say that you create a set like this one:
 
-![create_set](../images/create_set.png)
+<img src={story_characteristics} alt="story_characteristics" width="50%" />
 
 You can write a template like this for example
 
@@ -64,18 +71,16 @@ A cat named Mumin goes out for a walk. He suddenly stops when he sees a tiny puf
 
 Let's say that you have the following set of story moods that you are passing as the `mood` variable:
 
-![story_moods](../images/moods.png)
+<img src={story_moods} alt="story_moods" width="50%" />
 
-You can generate several prompts and compare their results by selecting this checkbox:
+You can generate several prompts and compare their results by selecting this checkbox in the **_Template variables_** area
 
-![several_prompts](../images/select_several_prompts.png)
+<img src={several_prompts} alt="several_prompts" width="40%" />
 
 If you click on **_Run Prompt_**, you will get the following two prompts with their respective completion:
 
-![sad_result](../images/sad_mood_story.png) ![happy_result](../images/happy_mood_story.png)
-
-<img src="../images/sad_mood_story.png" alt="sad_result" />
-<img src="../images/happy_mood_story.png" alt="happy_result" />
+<img src={sad_image} alt="sad_result" width="50%" />
+<img src={happy_image} alt="happy_result" width="50%" />
 
 ### Loops
 
@@ -91,11 +96,7 @@ Hello
 
 And the variables:
 
-```json
-{
-  "names": ["Moomin", "Snufkin", "Groke"]
-}
-```
+<img src={loops_var} alt="loops_var" width="50%" />
 
 The following prompt will be generated:
 
@@ -106,10 +107,6 @@ Hello
 - Snufkin
 - Groke
 ```
-
-:::info
-You can assign a set to a variable in the prompt editor
-:::
 
 ### Comments
 
