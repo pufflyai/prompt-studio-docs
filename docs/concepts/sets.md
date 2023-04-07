@@ -42,3 +42,5 @@ Tell me a comedy story.
 ```
 
 ## Set of Files
+
+There is an example of how to use sets of files [here](/concepts/files/#set-of-files-in-a-template)
