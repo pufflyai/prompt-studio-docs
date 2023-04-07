@@ -13,7 +13,7 @@ We currently support **four** types of assets:
 
 To create an asset, click on the **+** button, you will see the assets, as seen below.
 
-![create_asset.png](../images/create_asset.png)
+![create_asset.png](../images/concepts/create_asset.png)
 
 ### Collection
 
