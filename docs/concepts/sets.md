@@ -1,21 +1,18 @@
+import story_types from "../images/sets/story_types_set.png";
+
 # Sets
 
-A **set** is a collection of data that you can reuse across your prompts. This could be test queries, keywords
-for a specific narration style or examples for few shot prompting.
+A **set** is a collection of data that you can reuse across your prompts. This could be test queries, keywords for a specific narration style or examples for few shot prompting.
 
-:::info
-The current preview version of PromptStudio only allows sets to be arrays of strings.
-:::
+# Types of sets
 
-A set of story types
+As of today, PromptStudio allows a set to be an **array of strings** or a **file**.
 
-```text title="story_types.json"
-[
-    "horror",
-    "fantasy",
-    "comedy",
-]
-```
+## Set of Text variables
+
+Let's say you want to create a set of story types
+
+<img src={story_types} alt="story_types" width="50%"/>
 
 The following set could be used in combination with a prompt to generate a story in a specific style. To do that, assign
 the set to the `storyType` variable in the editor.
@@ -43,3 +40,7 @@ Tell me a fantasy story.
 ```text
 Tell me a comedy story.
 ```
+
+## Set of Files
+
+There is an example of how to use sets of files [here](/concepts/files/#set-of-files-in-a-template)

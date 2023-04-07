@@ -14,7 +14,7 @@ Prompt Studio aims to become the go-to tool for engineering prompts for language
 
 Think of it like **Postman but for LLMs**.
 
-![overview.png](./overview.png)
+![overview.png](./images/screenshots/overview.png)
 
 :::info
 You are currently using a preview version of Prompt Studio. If you find the idea useful but you lack a specific feature,
@@ -36,9 +36,13 @@ Before you can start using Prompt Studio you will need to Sign up using your git
 Currently Prompt Studio integrates with OpenAI APIs. Our goal is to allow you to connect to any ML model / API. Click on the OpenAI button to open the Providers menu and enter your API key in
 the input field
 
-![setup_api_key.png](./setup_api_key.png)
+![setup_api_key.png](./images/screenshots/setup_api_key.png)
 
 Once the Provider is setup you will be able to make requests towards it.
+
+:::info
+You will get an error on Prompt Studio when setting up your openAI key If you have not set up billing in your OpenAI account. To do this, click on your profile picture at the top right -> _Manage account_, then select _Billing_ on the left side. There you can set a billing plan. Your key should work on Prompt Studio after that.
+:::
 
 ## What's next?
 

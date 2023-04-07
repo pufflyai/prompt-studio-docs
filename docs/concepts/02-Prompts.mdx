@@ -1,0 +1,55 @@
+import run_options from "../images/screenshots/run_options.png";
+
+# Prompts
+
+A **prompt** is a piece of text that is used to provide context and guidance to the model to generate a response.
+As seen in the examples in the [templates](templates) section, you can generate several variations of a prompt by passing a:
+
+- Variable
+- Set of free-text variables
+- Set of files
+- File
+
+## Run options
+
+You can set the parameters of your prompt in our **_Run Options_** section:
+
+<img
+  src={run_options}
+  alt="run_options"
+  width="30%"
+  style={{ height: "auto" }}
+/>
+
+### Model
+
+More advanced models come at a greater cost and typically result in longer processing times.
+As of November 2022, the top-performing models for generating text and code are the "text-davinci-003"
+and "code-davinci-002" models, respectively.
+
+### Temperature
+
+The temperature of a language model is an indication of the frequency with which it generates less probable
+tokens. If the temperature is higher, the model tends to produce more random and imaginative results.
+However, it's important to note that higher temperature doesn't equate to accuracy or truthfulness,
+particularly when the use case involves factual information extraction or answering questions truthfully.
+In such cases, it's advisable to set the temperature to 0.
+
+### Top P
+
+Nucleus sampling is a technique that provides an alternative to temperature-based sampling. Instead of
+considering all possible tokens, the model focuses only on those with a `top_p` probability mass. For example,
+a `top_p` value of 0.1 means that only the tokens accounting for the top 10% probability mass are considered.
+
+When working with language models, it's typically recommended to adjust either the `top_p` value or the
+temperature, but not both at the same time.
+
+### Maximum length
+
+The **maximum length** parameter, also called by openAI as `max_tokens` doesn't determine the length of the output produced by the model. Rather,
+it serves as a hard limit on the number of tokens generated. In an ideal scenario, the model will stop
+generating tokens either when it reaches a point where it believes the output is complete or when it
+encounters a predefined stop sequence, and therefore the maximum length parameter would not be frequently
+reached.
+
+For more information on prompt parameters, or as we call them **_Run options_**, please refer to [openAI's model documentation](https://platform.openai.com/docs/api-reference/completions/create#completions/create-model)
