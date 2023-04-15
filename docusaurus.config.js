@@ -35,7 +35,6 @@ const config = {
         docs: {
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/pufflyai/prompt-studio-docs",
         },
         blog: {
           showReadingTime: true,
