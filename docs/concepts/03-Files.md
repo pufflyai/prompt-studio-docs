@@ -27,4 +27,4 @@ If we run the prompt, we get the following completion:
 
 ### Set of files in a template
 
-There is an example of how to use sets of files [here](/concepts/sets/#set-of-files)
+There is an example of how to use sets of files [here](/concepts/files/#set-of-files)
