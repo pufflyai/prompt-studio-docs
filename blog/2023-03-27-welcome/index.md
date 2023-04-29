@@ -7,7 +7,7 @@ tags: [Prompt Studio, release, preview]
 
 ![PromptStudioBanner](./Banner.png)
 
-We are exited to release an early preview version of **Prompt Studio**! After several weeks of work, we feel that we have a solid foundation for something that will be useful to anyone building applications on top of Language Models. Prompt Studio is an attempt at providing Prompt Engineers with the kind of tools we are accustomed to in Software development. How Prompt Studio will shape up will depend on you and other early adopters.
+We are excited to release an early preview version of **Prompt Studio**! After several weeks of work, we feel that we have a solid foundation for something that will be useful to anyone building applications on top of Language Models. Prompt Studio is an attempt at providing Prompt Engineers with the kind of tools we are accustomed to in Software development. How Prompt Studio will shape up will depend on you and other early adopters.
 
 Our goal is to tailor this tool to provide the best developer experience for anyone needing to experiment, fine-tune or test prompts. Our mission is to help you find the right words to interact with your AI systems.
 
