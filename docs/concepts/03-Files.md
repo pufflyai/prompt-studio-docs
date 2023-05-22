@@ -7,7 +7,7 @@ Files are a type of asset that you can pass to your template. Let's explore how 
 
 ### File creation
 
-To create a file, you click on the **_+_** sign to create the asset:
+To create a file, you click on the **+ New Asset** sign to create the asset:
 
 <img src={create_file} alt="create_file" width="30%" />
 

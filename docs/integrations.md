@@ -7,7 +7,7 @@ sidebar_position: 4
 Integrations allow you to test your prompts towards different model providers.
 
 :::info
-Currently we only integrate with the OpenAI APIs, but our goal is to allow you to connect to any ML model / API, locally and in the cloud.
+Currently we only integrate with the OpenAI APIs, but we are currently working on becoming **LLM agnostic** to allow you to connect to any ML model / API, locally and in the cloud.
 :::
 
 ## OpenAI
