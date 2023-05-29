@@ -6,7 +6,7 @@ import create_asset from "../images/screenshots/create_asset.png"
 
 # Concepts
 
-We currently support **three** types of assets:
+We currently support **five** types of assets:
 
 - [Prompt](/concepts/Prompts)
 - [List](/concepts/lists)
