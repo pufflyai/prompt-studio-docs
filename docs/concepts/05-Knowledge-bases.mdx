@@ -1,18 +1,19 @@
 import dragndrop_kb from "../images/knowledge-bases/dragndrop-kb.png";
 
 # Knowledge bases
-You can generate a Knowledge base by uploading files into Prompt Studio, you can drag and drop the following files formats:
+You can generate a Knowledge Base by uploading files into Prompt Studio, you can drag and drop the following file formats:
 .md, .txt, .pdf and .json
 
-You can think of a Knowledge base as a way for you to gather all the knowledge from your files to be able to start a chat based on 
-that knowledge base. A knowledge base wouldn't necessarily contain only files that fall under the same topic, it can also be 
-generated from files that talk about different topics if you are looking to understand a broad spectrum of topics.
+You can think of a Knowledge Base as an index for a set of files that you can then use as a context inside of a chat. A knowledge 
+base is not limited to containing only files related to a single topic; it can also be constructed using files that cover various 
+subjects, allowing for a comprehensive understanding of a wide range of topics.
 
 ## Example of usage
-Let's say you are a novel writer, and you want to write a story that is set in pre-Columbian times. You don't have the time to read 
-through long articles about pre-Columbian times specifics but you still want your novel to have realistic components from that time 
-in history. In our case, we found an article called "Vernacular architecture in the pre-Columbian Americas" that's 21 pages long. 
-First, we click on the **+ New Asset** sign to create the knowledge base, then we upload it by drag and dropping our file as follows: 
+Imagine you are a novelist, intending to craft a story set in pre-Columbian times. However, due to time constraints, delving into 
+lengthy articles on specific aspects of that historical period may not be feasible. Nonetheless, you aspire to infuse your novel with 
+realistic elements from that era.
+First, we click on the **+ New Asset** sign to create a Knowledge Base from an article that speaks about pre-columbian architecture, 
+then we upload it by drag and dropping our file as follows: 
 
 <img
   src={dragndrop_kb}
@@ -21,4 +22,5 @@ First, we click on the **+ New Asset** sign to create the knowledge base, then w
   style={{ height: "auto" }}
 />
 
-Then we will generate a knowledge base from that. Let's explore in the [Chat](chats) section how we can start writing our novel based on that.
+Then we will generate a knowledge base from the file. In order to interact with your knowledge base, you need to start a chat, and pass your
+knowledge base to it. Let's explore in the [Chat](chats) section how we can start writing our novel based on this knowledge base.
