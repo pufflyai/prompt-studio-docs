@@ -3,17 +3,12 @@ import chat_with_kb from "../images/chats/chat-with-kb.png";
 
 
 # Chat
-If you prefer to interact with a large language model through a Chat, you can start a Chat by clicking on the **+ New Asset** button 
+If you want to interact with a large language model through a Chat, you can start a Chat by clicking on the **+ New Asset** button 
 and selecting **+ New Chat**.
 
-To show how a knowledge base can improve the results of your chat, we will show the example below where we are asking the following 
-question in the chat: 
-
-`Using the context above, describe the Scene of a story where our protagonist encounters a typical building from pre-columbian 
-south america in an archeological dig site. Describe the dig site keep in mind the effect preservation of building roofs of vernacular 
-architecture`
-
-## Chat without knowledge base
+The language model can leverage the information from a [Knowledge Base](Knowledge-bases) to generate more accurate and meaningful responses. 
+The contextual understanding provided by the knowledge base enhances the overall quality of the conversation and allows for a more informed 
+and relevant exchange of information. To create your context from a Knowledge Base, you can click on the **_ + _** sign as shown in the image below:
 
 <img
   src={chat_without_kb}
@@ -22,11 +17,8 @@ architecture`
   style={{ height: "auto" }}
 />
 
-The answer provided by the LLM is not too bad, it does give some good descriptions associated with pre-Columbian times, but let's compare
-this answer to the one provided when we associate the chat with the knowledge base that we generated [previously](knowledge-bases) using 
-the article about "Vernacular architecture in the pre-Columbian Americas". 
 
-## Chat with knowledge base
+In the image below, you can see an example where we passed the Knowledge Base that we generated in the [previous section](Knowledge-bases).
 
 <img
   src={chat_with_kb}
@@ -35,12 +27,3 @@ the article about "Vernacular architecture in the pre-Columbian Americas".
   style={{ height: "auto" }}
 />
 
-You can notice that the descriptions in the scene here are a lot more detailed. The answer mentions "The building was made of adobe 
-bricks and had a thatched roof, which was surprisingly well-preserved despite the passage of time. The walls were decorated with intricate
-designs, and the door was adorned with a wooden lintel. **The protagonist couldn't believe their luck**."
-The reason the answer mentions that the protagonist couldn't believe their luck is because according to the article that we passed
-to the knowledge base, most of roofs and walls from pre-Columbian times have disappeared, so archeologists only rely on stone 
-and earthen foundations of buildings. This is something that we can see wasn't mentioned in the previous chat answers where we didn't 
-provide the knowledge base. It actually mentions that the protagonist found a structure with detailed carvings. 
-This is just one example that shows the benefits of generating a knowledge base and passing it to your chat to make it more accurate. 
-Explore it and let us know what you think!
