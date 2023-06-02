@@ -36,6 +36,8 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
         },
         blog: {
+          blogSidebarTitle: "All posts",
+          blogSidebarCount: "ALL",
           showReadingTime: true,
           editUrl: "https://github.com/pufflyai/prompt-studio-docs",
         },
