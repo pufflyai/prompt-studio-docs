@@ -73,6 +73,6 @@ If you want to learn more about Prompt Engineering here are a few amazing resour
 
 Our development roadmap is open and you are welcome to tell us what we should focus on next.
 
-[Check it out on Github](https://github.com/orgs/pufflyai/projects/6/views/4).
+[Check it out on Github](https://github.com/orgs/pufflyai/projects/8/views/1).
 
 **We are looking forward to hear from you!**
